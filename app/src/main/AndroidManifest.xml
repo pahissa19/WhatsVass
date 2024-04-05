@@ -33,14 +33,20 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize"
             android:label="@string/title_activity_chat_view"
-            android:theme="@style/Theme.WhatsVass" />
+            android:theme="@style/Theme.WhatsVass"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
         <activity
             android:name=".ui.theme.settings.SettingsView"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
         <activity
             android:name=".ui.theme.splash.SplashView"
             android:exported="true"
-            android:theme="@style/Theme.App.Starting">
+            android:theme="@style/Theme.App.Starting"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -49,20 +55,27 @@
         </activity>
         <activity
             android:name=".ui.theme.login.LoginView"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity">
 
         </activity>
         <activity
             android:name=".ui.theme.home.HomeView"
-            android:exported="false">
-
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity">
         </activity>
         <activity
             android:name=".ui.theme.profile.ProfileView"
-            android:exported="true"/>
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
         <activity
             android:name=".ui.theme.contacts.ContactsView"
-            android:exported="true"/>
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
         <service android:name=".usecases.firebase.FirebaseMessService"
             android:exported="false">
             <intent-filter>
